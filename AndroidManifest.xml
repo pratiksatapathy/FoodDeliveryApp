@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prs.delivery"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sample"
+        android:label="Delivery Doots"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Delivery Doots"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Secondfragment"
+            android:label="@string/title_activity_secondfragment" >
+        </activity>
+        <activity
+            android:name=".ThirdfragActivity"
+            android:label="@string/title_activity_thirdfrag" >
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="Delivery Doots"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Restaurantpage"
+            android:label="@string/title_activity_restaurantpage" >
+        </activity>
+        <activity
+            android:name=".Foodmenu"
+            android:label="@string/title_activity_foodmenu" >
+        </activity>
+        <activity
+            android:name=".FragmentItemselection"
+            android:label="@string/title_activity_fragment_itemselection" >
+        </activity>
+        <activity
+            android:name=".Shoppingcart"
+            android:label="@string/title_activity_shoppingcart" >
+        </activity>
+        <activity
+            android:name=".Payment"
+            android:label="@string/title_activity_payment" >
+        </activity>
+    </application>
+
+</manifest>
